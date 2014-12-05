@@ -29,7 +29,7 @@ Waterfall-Light
         
         waterfall(setting);
 
-4. 詳細使用可以參考 index.html 
+4. 詳細使用可以參考 [index.html](https://github.com/LinZap/Waterfall-Light/blob/master/index.html)
 
 
 ***
