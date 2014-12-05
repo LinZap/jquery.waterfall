@@ -5,31 +5,34 @@ Waterfall-Light
 
 ## Usage
 
-1. include jQuery 
+1. include jQuery (最低1.8以上)
 
-        &lt;script src="//code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
-        &lt;script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt;
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>;
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-2. include Waterfall-Light
+2. include Waterfall-Light.js
 
-        &lt;script src="waterfall-light.js"&gt;&lt;/script&gt;
+        <script src="waterfall-light.js"></script>
 
-3. write js and run!
+3. write js and run! 
 
         var setting={
-        'gap':10, //間距
-        'box':$('#box'), //容器
-        'ele':$('.card'), // 所有元素(呈現瀑布式排版的元素)
-        'refresh':1000, // 更新頻率(ms)
-        'col5':1200, // 5欄時寬度以上為何(px)?
-        'col4':800, // 4欄時寬度以上為何(px)?
-        'col3':600, // 3欄時寬度以上為何(px)?
-        'col2':400 // 2欄時寬度以上為何(px)? 剩下的就是 1欄
+        'gap':10,               //間距
+        'box':$('#box'),        //容器
+        'ele':$('.card'),       // 所有元素(呈現瀑布式排版的元素)
+        'refresh':1000,         // 更新頻率(ms)
+        'col5':1200,            // 5欄時寬度以上為何(px)?
+        'col4':800,             // 4欄時寬度以上為何(px)?
+        'col3':600,             // 3欄時寬度以上為何(px)?
+        'col2':400              // 2欄時寬度以上為何(px)? 剩下的就是 1欄
         };
         
         waterfall(setting);
 
 4. 詳細使用可以參考 index.html 
+
+
+***
 
 ## License
 
