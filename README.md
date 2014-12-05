@@ -31,6 +31,10 @@ Waterfall-Light
 
 4. 詳細使用可以參考 [index.html](https://github.com/LinZap/Waterfall-Light/blob/master/index.html)
 
+## Demo
+
+http://linzap.byethost17.com/waterfall-light/
+
 
 ***
 
