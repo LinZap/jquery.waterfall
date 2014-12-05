@@ -7,13 +7,13 @@ Waterfall-Light
 
 1. include jQuery 
 
-    &lt;script src="//code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+        &lt;script src="//code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
     
-    &lt;script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt;
+        &lt;script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt;
 
 2. include Waterfall-Light
 
-    <script src="waterfall-light.js"></script>
+        &lt;script src="waterfall-light.js"&gt;&lt;/script&gt;
 
 3. write js and run!
 
