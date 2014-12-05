@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Waterfall-Light Demo</title>
+	<style type="text/css">
+		*{margin: 0; padding:0;}
+		body{padding:20px;}
+	</style>
+</head>
+<body>
+	
+	<div id="box"></div>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="waterfall-light.js"></script>
+	<script>
+
+		$(function(){
+			var box = $('#box');
+			for(var i=0;i<50;i++){
+				var card = $('<div>').addClass('card').css({
+					height: Math.floor((Math.random() * 100) + 100)+"px",
+					background: '#ace'
+				}); box.append(card);
+			}
+
+
+
+
+			// useage: fallow below
+			var setting={
+				'gap':10, // margin
+				'box':$('#box'), // 容器
+				'ele':$('.card'), // 所有元素
+				'refresh':1000, // 更新頻率(ms)
+				'col5':1200, // 5欄時寬度以上為何?
+				'col4':800, // 4欄時寬度以上為何?
+				'col3':600, // 3欄時寬度以上為何?
+				'col2':400 // 2欄時寬度以上為何? 剩下的就是 1欄
+			};
+			waterfall(setting);
+		});
+	</script>
+</body>
+</html>
