@@ -16,6 +16,8 @@ Waterfall-Light
 
 3. write js and run! 
 
+
+        <script>
         var setting={
         'gap': 10,               //間距
         'box': $('#box'),        //容器
@@ -28,6 +30,8 @@ Waterfall-Light
         };
         
         waterfall(setting);
+        </script>
+
 
 4. 詳細使用可以參考 [index.html](https://github.com/LinZap/Waterfall-Light/blob/master/index.html)
 
