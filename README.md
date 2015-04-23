@@ -32,7 +32,7 @@ Waterfall-Light
 　
 ## Demo
 
-https://github.com/LinZap/Waterfall-Light/blob/master/index.html
+http://linzap.github.io/waterfall/
 
 　
 
