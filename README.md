@@ -62,7 +62,10 @@ var setting = {
 	scrollbottom : {
 		ele: $('body'),
 		endtxt : 'No More~~',
-		gap: 300
+		gap: 300,
+		callback: funciton(waterfall){
+			// do something
+		}
 	}
 };
 
@@ -70,11 +73,17 @@ $('box').waterfall(setting);
 ```
 　您可以傳入一個`物件`，其中的選項都是可選填的，全部如下
 
-* **`gap`(int): 排列物體彼此的間距(margin)，單位為 px
-* **`gridWidth`(array): 宣告螢幕寬度所對應的欄位數量，上述設定表示螢幕寬度 (px)
-	* *** `0~400` 呈現 1 欄
-	* *** `400~600` 呈現 2 欄
-	* *** `600~800` 呈現 3 欄
-	* *** `800~1200` 呈現 4 欄
-	* *** `>1200` 呈現 5 欄
+* `gap`(int): 排列物體彼此的間距(margin)，單位為像素 px
+* `gridWidth`(array): 宣告螢幕寬度所對應的欄位數量，上述設定表示螢幕寬度 (px)
+	*  `0~400` 呈現 1 欄
+	*  `400~600` 呈現 2 欄
+	*  `600~800` 呈現 3 欄
+	*  `800~1200` 呈現 4 欄
+	*  `>1200` 呈現 5 欄
+* `refresh`(int): 偵測螢幕變化的時間間隔，單位為毫秒 (ms)
+* `scrollbottom`(object): 設定開啟偵測卷軸滾動到底部，要做的事情
+	* `ele`(element): 產生卷軸的元素，預設為 `$('box')` 的父元素
+	* `endtxt`(string): 捲動到底部後，顯示的文字
+	* `gap`(int): 若距離底部小於這個 `gap` 值，則會觸發 callback 執行
+	* `callback`(funciton): 回呼函式，您可以定義卷軸到底部時，會執行的其它功能
 	
