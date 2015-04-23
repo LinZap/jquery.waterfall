@@ -1,6 +1,7 @@
 # Waterfall-Light
 
 Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
+
 簡單、輕量的瀑布式排版，您可以簡單、快速的使用它。
 
 ![Alt text](https://raw.githubusercontent.com/LinZap/LinZap.github.io/master/img/waterfall.png "Waterfall")
@@ -8,7 +9,7 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 
 ## Examples
 
-假設您想將 id 為 `box` 元素內的 `div` 以 Waterfall 型式排列
+假設您欲將 id 為 `box` 元素內的 `div` 以 Waterfall 型式排列
 ```html
 <!-- box is a container -->
 <div id="box">
@@ -20,13 +21,13 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 </div>
 ```
 
-您只需要指定欲使用 Waterfall 排列的元素，便可達到排列的效果。
+您只需指定欲使用 Waterfall 排列的元素，便可達到排列的效果。
 ```js
 // waterfall have effect on #box
  $('#box').waterfall();
 ```
 
-如上所示範例，Waterfall 的效果會使得 `box` 內的 `div` 元素以 Waterfall 的形式排列。
+如上所示，`box` 內的 `div` 元素以 Waterfall 的形式排列。
 
 
 ## Installation
@@ -43,7 +44,7 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 <!-- The core Waterfall library -->
 <script src="//linzap.github.io/waterfall/waterfall-light.js"></script>
 ```
-您也可以直接下載 Waterfall library 引入[starter kit](https://github.com/LinZap/Waterfall-Light/archive/master.zip) ，這個方案的載入速度也會相較來的快。
+或是直接下載 Waterfall library 引入[starter kit](https://github.com/LinZap/Waterfall-Light/archive/master.zip) ，這個方案的載入速度也會相較來的快。
 
 　
 　
