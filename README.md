@@ -1,8 +1,10 @@
-Waterfall-Light
+# Waterfall-Light
 ===============
 
 簡單、輕量的瀑布式排版，您可以簡單、快速的使用它。
 
+
+![Alt text](https://raw.githubusercontent.com/LinZap/LinZap.github.io/master/img/waterfall.png "Waterfall")
 ## Usage
 
 1. include jQuery (最低1.8以上)
