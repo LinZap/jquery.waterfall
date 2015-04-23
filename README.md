@@ -16,13 +16,10 @@ Waterfall-Light
 
 3. Quick Start
         
-        <script>
-
-          // waterfall have effect on #box
-          $('#box').waterfall();
-
-        </script>
-
+```js
+// waterfall have effect on #box
+ $('#box').waterfall();
+```
 
 4. 詳細使用可以參考 [index.html](https://github.com/LinZap/Waterfall-Light/blob/master/index.html)
 
