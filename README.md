@@ -44,7 +44,7 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 <!-- The core Waterfall library -->
 <script src="//linzap.github.io/waterfall/waterfall-light.js"></script>
 ```
-或是直接下載 Waterfall library 引入[starter kit](https://github.com/LinZap/Waterfall-Light/archive/master.zip) ，這個方案的載入速度也會相較來的快。
+或是下載 Waterfall[starter kit](https://github.com/LinZap/Waterfall-Light/archive/master.zip) 來引入這個 library，載入速度也會相較的快。
 
 　
 　
