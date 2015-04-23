@@ -29,7 +29,8 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 
 如上所示，所有`box` 內的 `div` 元素會以 Waterfall 的形式排列。
 
-
+　
+　
 ## Installation
 
 因為 Waterfall 是一個 [jQuery](https://jquery.com/) 的 plug-in，
@@ -64,7 +65,16 @@ var setting = {
 		gap: 300
 	}
 };
+
 $('box').waterfall(setting);
 ```
-　您可以傳入一個`物件`
+　您可以傳入一個`物件`，其中的選項都是可選填的，全部如下
 
+* **`gap`(int): 排列物體彼此的間距(margin)，單位為 px
+* **`gridWidth`(array): 宣告螢幕寬度所對應的欄位數量，上述設定表示螢幕寬度 (px)
+	* *** `0~400` 呈現 1 欄
+	* *** `400~600` 呈現 2 欄
+	* *** `600~800` 呈現 3 欄
+	* *** `800~1200` 呈現 4 欄
+	* *** `>1200` 呈現 5 欄
+	
