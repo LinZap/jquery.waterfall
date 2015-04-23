@@ -47,7 +47,7 @@
 			// the container must be relative or absolute position
 			// This setting needs to be strengthened
 			this.css('position', 'relative');
-			console.log(g_option[this.selector]);
+			//console.log(g_option[this.selector]);
 			// start
 			detect(this);
 	  	},
@@ -113,7 +113,7 @@
 		var cwidth =(w-((g_option[t.selector].col-1)*gap))/g_option[t.selector].col,
 			left=[];
 
-			console.log(cwidth);
+			//console.log(cwidth);
 		for(var i=0;i<g_option[t.selector].col;i++){
 			left.push(i*cwidth+i*gap);
 			g_option[t.selector].top.push(0);
