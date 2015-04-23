@@ -27,7 +27,7 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
  $('#box').waterfall();
 ```
 
-如上所示，`box` 內的 `div` 元素以 Waterfall 的形式排列。
+如上所示，所有`box` 內的 `div` 元素會以 Waterfall 的形式排列。
 
 
 ## Installation
@@ -44,13 +44,27 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 <!-- The core Waterfall library -->
 <script src="//linzap.github.io/waterfall/waterfall-light.js"></script>
 ```
-或是下載 Waterfall[starter kit](https://github.com/LinZap/Waterfall-Light/archive/master.zip) 來引入這個 library，載入速度也會相較的快。
+或是下載 Waterfall [starter kit](https://github.com/LinZap/Waterfall-Light/archive/master.zip) 來引入這個 library，載入速度也會相較的快。
 
 　
 　
-## Demo
+## Advanced usage
 
-http://linzap.github.io/waterfall/
+如果您需要控制更多參數、細節，Waterfall 擁有幾個 methods 如下所示。
 
-　
+### Setting
+```js
+var setting = {
+	gap: 10,
+	gridWidth: [0,400,600,800,1200],
+	refresh: 500,
+	scrollbottom : {
+		ele: $('body'),
+		endtxt : 'No More~~',
+		gap: 300
+	}
+};
+$('box').waterfall(setting);
+```
+　您可以傳入一個`物件`
 
