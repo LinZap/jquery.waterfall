@@ -63,7 +63,7 @@ var setting = {
 		ele: $('body'),
 		endtxt : 'No More~~',
 		gap: 300,
-		callback: funciton(waterfall){
+		callback: funciton(container){
 			// do something
 		}
 	}
