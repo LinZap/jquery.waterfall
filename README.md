@@ -89,7 +89,7 @@ $('box').waterfall(setting);
 
 　
 　
-### Stop,Reatart Waterfall effect
+### Stop,Restart Waterfall effect
 Waterfall 是一個會不斷偵測螢幕變化的函式，若您需要暫時停止它的偵測功能，可以這樣呼叫
 ```js
 	// Launch waterfall 
@@ -101,19 +101,23 @@ Waterfall 是一個會不斷偵測螢幕變化的函式，若您需要暫時停�
 	// Restart it
 	$('box').waterfall();	
 ```
-Waterfall 會以您 `$('box')` 容器做為識別的依據，若 wab 上同時存在 2 個以上的 Waterfall 容器，stop 也只會作用在 `$('box')` 這個容器上
+Waterfall 會以您 `$('box')` 容器做為識別的依據，若 wab 上同時存在 2 個以上的 Waterfall 容器，stop 也只會作用在您指定的容器上
 
 　
 　
-### Scroll to bottom
+### Auto load more data on page scroll
 若您有設定 `scrollbottom` 的話，表示您可能會加入新的元素到 `$('box')` 容器中，此時您可在 `callback` 中呼叫 `sort` 重新排列容器中的元素。在這個`callback`中，會傳入容器自身(`$('box')`)方便您操控。
 ```js
 var setting = {
 	scrollbottom : {
 		callback: funciton(container){
-			// if scroll to bottom
-			// resort elements
-			container.waterfall('sort');
+			// if scroll to bottom, load more data...
+			$.ajax({}).done(function(data){
+
+				// resort elements
+				container.waterfall('sort');
+
+			});
 		}
 	}
 };
@@ -128,28 +132,30 @@ var setting = {
 	scrollbottom : {
 		endtxt : 'No More Data !!',
 		callback: funciton(container){
-			// if scroll to bottom
-			if(!done)
-				// resort elements
-				container.waterfall('sort');
-			else
-				// done, show message
-				container.waterfall('end');
+			// if scroll to bottom, load more data...
+			$.ajax({}).done(function(data){
+				if(data)	
+					// resort elements
+					container.waterfall('sort');
+				else
+					// done, show message
+					container.waterfall('end');
+			});
 		}
 	}
 };
 
 $('box').waterfall(setting);
 ```  
-注意，如果您呼叫了`$('box').waterfall("stop")`，那麼`scrollbottom`不會被觸發，而且`$('box').waterfall("sort")`也會失效。
+注意，如果您呼叫了`$('box').waterfall("stop")`，那麼 `scrollbottom` 不會被觸發，而且 `$('box').waterfall("sort")` 也會失效。
  
 
-另外，呼叫了`container.waterfall('end')`並不會停止偵測。若需停止偵測，還是需要呼叫`$('box').waterfall("stop")`才行。
+另外，呼叫了 `container.waterfall('end')` 並不會停止偵測，若需停止偵測，仍需呼叫 `$('box').waterfall("stop")` 才行。
 
 　
 　
 ### Overwrite setting
-如果您需要更新 Waterfall 的 Setting，您可以直接傳入設定物件。Waterfall 不會覆蓋掉已經設定的參數
+如果您需要更新 Waterfall 的 setting，您可以直接傳入設定物件。Waterfall 不會覆蓋掉已經設定的參數
 ```js
 var setting = {
 	gap: 10,
@@ -165,17 +171,17 @@ $('box').waterfall( {gap:30} );
 
 　
 　
-### License
+## License
 
 Waterfall is [Apache](http://www.apache.org/licenses/LICENSE-2.0) License
 You can find it in the root directory of this source tree.
  
 
  
-### More...
+## More...
  如果有 Waterfall 的建議可以發出 [issue]() 讓我知道。
 
- 也歡迎您成為 Waterfall 的 contributer，讓這個 Plug-in 更加完善(pull-request)
+ 也歡迎您成為 Waterfall 的 contributer，讓這個 Plug-in 更加完善 (pull-request)
 
 
  
