@@ -70,11 +70,10 @@
 				g_option[this.selector].scrollbottom.ele.css('top',g_option[this.selector].top[getMaxCol(this)]+"px");
 				this.append(g_option[this.selector].scrollbottom.ele);
 			}
-			if(g_option[this.selector].timer){ 
-				clearInterval(g_option[this.selector].timer); 
-				g_option[this.selector].timer = false; 
-			}		
-
+			// if(g_option[this.selector].timer){ 
+			// 	clearInterval(g_option[this.selector].timer); 
+			// 	g_option[this.selector].timer = false; 
+			// }		
 		}
 	};
 
