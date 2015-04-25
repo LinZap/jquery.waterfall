@@ -151,7 +151,7 @@ var setting = {
 
 $('box').waterfall(setting);
 ```  
-注意，如果您呼叫了`$('box').waterfall("stop")`，那麼 `scrollbottom` 不會被觸發，而且 `$('box').waterfall("sort")` 也會失效。
+:exclamation: 注意，如果您呼叫了`$('box').waterfall("stop")`，那麼 `scrollbottom` 不會被觸發，而且 `$('box').waterfall("sort")` 也會失效。
  
 
 另外，呼叫了 `container.waterfall('end')` 並不會停止偵測，若需停止偵測，仍需呼叫 `$('box').waterfall("stop")` 才行。
@@ -183,8 +183,7 @@ You can find it in the root directory of this source tree.
 
  
 ## More...
- 如果有 Waterfall 的建議可以發出 [issue](https://github.com/LinZap/jquery.waterfall/issues/new) 讓我知道。
-
+ 如果有 Waterfall 的建議可以發出 [issue](https://github.com/LinZap/jquery.waterfall/issues/new) 讓我知道 
  也歡迎您成為 Waterfall 的 contributer，讓這個 Plug-in 更加完善 (Pull-requests)
 
 
