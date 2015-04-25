@@ -1,6 +1,6 @@
 # jQuery.waterfall
 
-[![Code Climate](https://codeclimate.com/repos/553b2aaee30ba0242f001a88/badges/af9314d9006f0e098ca3/gpa.svg)](https://codeclimate.com/repos/553b2aaee30ba0242f001a88/feed) [![Join the chat at https://gitter.im/LinZap/jquery.waterfall](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LinZap/jquery.waterfall?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Code Climate](https://codeclimate.com/repos/553b2aaee30ba0242f001a88/badges/af9314d9006f0e098ca3/gpa.svg)](https://codeclimate.com/repos/553b2aaee30ba0242f001a88/feed)  [![Join the chat at https://gitter.im/LinZap/jquery.waterfall](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LinZap/jquery.waterfall?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
 
