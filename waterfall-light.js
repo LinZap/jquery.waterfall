@@ -126,8 +126,8 @@
 		var cwidth =(w-((g_option[id].col-1)*gap))/g_option[id].col,
 			left=[];
 
-		for(var i=0;i<g_option[id].col;i++){
-			left.push(i*cwidth+i*gap);
+		for(var j=0;j<g_option[id].col;j++){
+			left.push(j*cwidth+j*gap);
 			g_option[id].top.push(0);
 		}
 		t.children().css({
@@ -137,7 +137,7 @@
 			transition: 'left ' + g_option[id].refresh + 'ms ease-in-out,' +
 						'top ' + g_option[id].refresh + 'ms ease-in-out,' +
 						'opacity ' + g_option[id].refresh + 'ms ease-in-out'
-			}).each(function(i) {
+			}).each(function() {
 				var ic = getPolesCol(id,false);
 				$(this).css({ width: cwidth+'px', left: left[ic]+'px', top : g_option[id].top[ic]+'px',opacity:'1' });
 				g_option[id].top[ic]+=$(this)[0].offsetHeight+gap;
@@ -153,7 +153,7 @@
 		if(!g_option[id].timer){
 			g_option[id].timer =  setInterval(function(){
 				var bw = t[0].offsetWidth;
-				if(g_option[id].w!=bw) {
+				if(g_option[id].w!==bw) {
 					g_option[id].w=bw;  
 					sorting(t); 
 				}
@@ -192,10 +192,10 @@
 			res = methods[ arguments[0] ].apply( this, Array.prototype.slice.call( arguments[0], 1 ));
 		}
 		else {
-			$.error( 'Method ' +  method + ' does not exist on jQuery.waterfall' );
+			$.error( 'Method ' +  arguments[0] + ' does not exist on jQuery.waterfall' );
 		}
 		return res || this;
-	}
+	};
 
 })(jQuery);
 
