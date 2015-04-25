@@ -1,4 +1,4 @@
-# Waterfall-Light
+# jQuery.waterfall
 
 Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 
