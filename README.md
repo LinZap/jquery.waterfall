@@ -1,5 +1,7 @@
 # jQuery.waterfall
 
+[![Join the chat at https://gitter.im/LinZap/jquery.waterfall](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LinZap/jquery.waterfall?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 
 簡單、輕量的瀑布式排版，您可以簡單、快速的使用它。
