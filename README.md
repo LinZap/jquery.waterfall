@@ -151,7 +151,7 @@ var setting = {
 
 $('box').waterfall(setting);
 ```  
-注意，如果您呼叫了`$('box').waterfall("stop")`，那麼 `scrollbottom` 不會被觸發，而且 `$('box').waterfall("sort")` 也會失效。
+:exclamation: 注意，如果您呼叫了`$('box').waterfall("stop")`，那麼 `scrollbottom` 不會被觸發，而且 `$('box').waterfall("sort")` 也會失效。
  
 
 另外，呼叫了 `container.waterfall('end')` 並不會停止偵測，若需停止偵測，仍需呼叫 `$('box').waterfall("stop")` 才行。
