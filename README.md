@@ -183,7 +183,7 @@ You can find it in the root directory of this source tree.
 
  
 ## More...
- 如果有 Waterfall 的建議可以發出 [issue]() 讓我知道。
+ 如果有 Waterfall 的建議可以發出 [issue](https://github.com/LinZap/jquery.waterfall/issues/new) 讓我知道。
 
  也歡迎您成為 Waterfall 的 contributer，讓這個 Plug-in 更加完善 (Pull-requests)
 
