@@ -1,0 +1,23 @@
+{
+  "name": "jquery.waterfall",
+  "version": "1.0",
+  "homepage": "https://github.com/LinZap/jquery.waterfall",
+  "authors": [
+    "Zap <soldierzx0705@gmail.com>"
+  ],
+  "description": "LightWaterfall, cross-browser typesetting on the web with jQuery",
+  "main": "waterfall-light.js",
+  "keywords": [
+    "waterfall"
+  ],
+  "license": "Apache",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html",
+    "README.md"
+  ]
+}
