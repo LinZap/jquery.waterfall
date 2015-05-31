@@ -50,15 +50,17 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 <script src="//linzap.github.io/waterfall/waterfall-light.js"></script>
 ```
 或是下載 Waterfall [starter kit](https://github.com/LinZap/jquery.waterfall/releases/download/v1.0/jquery.waterfall_v1.0.zip) 來引入這個 library，載入速度也會相較的快。
- 
- 
+
+　
+　
 The fastest way to get started is use [bower](http://bower.io), it's as easy as:
 
 ```sh
 bower install --save jquery.waterfall
 ```
- 
- 　
+
+　
+　
 ## Advanced usage
 
 如果您需要控制更多參數、細節，Waterfall 擁有幾個 methods 如下所示。
