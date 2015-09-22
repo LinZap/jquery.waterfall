@@ -142,6 +142,8 @@
 				$(this).css({ width: cwidth+'px', left: left[ic]+'px', top : g_option[id].top[ic]+'px',opacity:'1' });
 				g_option[id].top[ic]+=$(this)[0].offsetHeight+gap;
 			});
+            //set the waterfall box height
+            t.css("height",g_option[id].top[getPolesCol(id,true)] + "px");
 			if(scrollbottom)
 				if(scrollbottom.endele)
 					scrollbottom.endele.css('top', g_option[id].top[getPolesCol(id,true)]+"px");

@@ -9,29 +9,37 @@
         </style>
     </head>
     <body>
-
-        <div id="box"></div>
-
+        <h2>Box group 1</h2>
+        <div id="box-group-1"></div>
+        <h2>Box group 2</h2>
+        <div id="box-group-2"></div>
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="waterfall-light.js"></script>
         <script>
 
             $(function(){
-                var box = $('#box');
-                for(var i=0;i<50;i++){
+                var boxGroup1 = $('#box-group-1');
+                for(var i=0;i<10;i++){
                     var card = $('<div>').addClass('card').css({
                         height: Math.floor((Math.random() * 100) + 100)+"px",
                         background: '#ace'
-                    }); box.append(card);
+                    }); boxGroup1.append(card);
                 }
 
-
+                var boxGroup2 = $('#box-group-2');
+                for(var i=0;i<10;i++){
+                    var card = $('<div>').addClass('card').css({
+                        height: Math.floor((Math.random() * 100) + 100)+"px",
+                        background: '#F85C5C'
+                    }); boxGroup2.append(card);
+                }
 
 
                 // useage: fallow below
 
-                $('#box').waterfall();
+                $('#box-group-1').waterfall();
+                $('#box-group-2').waterfall();
 
                 //eoiwefoiwef
 
