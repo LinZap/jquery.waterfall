@@ -1,6 +1,6 @@
 {
   "name": "jquery.waterfall",
-  "version": "1.0",
+  "version": "1.1",
   "homepage": "https://github.com/LinZap/jquery.waterfall",
   "authors": [
     "LinZap",
@@ -12,8 +12,8 @@
     "waterfall"
   ],
   "repository": {
-  "type": "git",
-  "url": "git://github.com/LinZap/jquery.waterfall.git"
+    "type": "git",
+    "url": "git://github.com/LinZap/jquery.waterfall.git"
   },
   "license": "Apache",
   "ignore": [
@@ -22,7 +22,11 @@
     "bower_components",
     "test",
     "tests",
-    "index.html",
-    "README.md"
-  ]
+    "*.html",
+    "README.md",
+    "bower.json"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
 }

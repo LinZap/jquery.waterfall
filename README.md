@@ -48,7 +48,7 @@ $(function(){
 首先您需要先載入 [jQuery](https://jquery.com/) library
 接著載入 Waterfall library
 
-
+### Basic
 ```html
 <!-- The jQuery library version >= 1.8 -->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>;
@@ -58,8 +58,13 @@ $(function(){
 ```
 或是下載 Waterfall [starter kit](https://github.com/LinZap/jquery.waterfall/releases/download/v1.0/jquery.waterfall_v1.0.zip) 來引入這個 library，載入速度也會相較的快。
 
+### Bower
+```sh
+bower install jquery.waterfall
+})
+```　
 　
-　
+
 ## Advanced usage
 
 如果您需要控制更多參數、細節，Waterfall 擁有幾個 methods 如下所示。
