@@ -29,7 +29,7 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 ```js
 // waterfall have effect on #box
 $(function(){
- $('#box').waterfall();
+	$('#box').waterfall();
 })
 ```
 
