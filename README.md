@@ -28,15 +28,18 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 您只需指定欲使用 Waterfall 排列的元素，便可達到排列的效果。
 ```js
 // waterfall have effect on #box
- $(window).load(function() {
- 	$('#box').waterfall();
- });
+ $('#box').waterfall();
 ```
 
 如上所示，所有`box` 內的 `div` 元素會以 Waterfall 的形式排列。
 
-　
-　
+
+### More Examples
+
+* [Basic](https://github.com/LinZap/jquery.waterfall/blob/master/index.html)
+* [Multi-Waterfall](https://github.com/LinZap/jquery.waterfall/blob/master/demo-multi-water.html)
+* [Scroll down load more content](https://github.com/LinZap/jquery.waterfall/blob/master/loadmore.html)
+
 ## Installation
 
 因為 Waterfall 是一個 [jQuery](https://jquery.com/) 的 plug-in，
@@ -52,14 +55,6 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 <script src="//linzap.github.io/waterfall/waterfall-light.js"></script>
 ```
 或是下載 Waterfall [starter kit](https://github.com/LinZap/jquery.waterfall/releases/download/v1.0/jquery.waterfall_v1.0.zip) 來引入這個 library，載入速度也會相較的快。
-
-　
-　
-The fastest way to get started is use [bower](http://bower.io), it's as easy as:
-
-```sh
-bower install --save jquery.waterfall
-```
 
 　
 　
@@ -83,9 +78,7 @@ var setting = {
 	}
 };
 
-$(window).load(function() {
-	$('box').waterfall(setting);
-)};
+$('box').waterfall(setting);
 ```
 　您可以傳入一個`物件`，其中的選項"全部"皆可選填，一覽如下：
 
@@ -108,8 +101,6 @@ $(window).load(function() {
 ### Stop,Restart Waterfall effect
 Waterfall 是一個會不斷偵測螢幕變化的函式，若您需要暫時停止它的偵測功能，可以這樣呼叫
 ```js
-
-$(window).load(function() {
 	// Launch waterfall 
 	$('box').waterfall();
 
@@ -117,8 +108,7 @@ $(window).load(function() {
 	$('box').waterfall('stop');
 	
 	// Restart it
-	$('box').waterfall();
-});
+	$('box').waterfall();	
 ```
 Waterfall 會以您 `$('box')` 容器做為識別的依據，若 wab 上同時存在 2 個以上的 Waterfall 容器，stop 也只會作用在您指定的容器上
 
@@ -141,9 +131,7 @@ var setting = {
 	}
 };
 
-$(window).load(function() {
-	$('box').waterfall(setting);
-});
+$('box').waterfall(setting);
 ```  
   
   
@@ -166,9 +154,7 @@ var setting = {
 	}
 };
 
-$(window).load(function() {
-	$('box').waterfall(setting);
-});
+$('box').waterfall(setting);
 ```  
 :exclamation: 注意，如果您呼叫了`$('box').waterfall("stop")`，那麼 `scrollbottom` 不會被觸發，而且 `$('box').waterfall("sort")` 也會失效。
  
@@ -185,13 +171,10 @@ var setting = {
 	gridWidth: [0,400,600,800,1200],
 	refresh: 500,
 };
+$('box').waterfall(setting);
 
-$(window).load(function() {
-	$('box').waterfall(setting);
-
-	// only update "gap" value
-	$('box').waterfall( {gap:30} );
-});
+// only update "gap" value
+$('box').waterfall( {gap:30} );
 
 ```
 

@@ -73,7 +73,7 @@
 			var id = getHashId(this);
 			if(g_option[id].scrollbottom){
 				g_option[id].scrollbottom.ele.css('top',g_option[id].top[getPolesCol(id,true)]+"px");
-				this.append(g_option[id].scrollbottom.ele);
+				this.append(g_option[id].scrollbottom.endele);
 			}
 			if(g_option[id].timer){ 
 				clearInterval(g_option[id].timer); 
@@ -142,11 +142,14 @@
 				$(this).css({ width: cwidth+'px', left: left[ic]+'px', top : g_option[id].top[ic]+'px',opacity:'1' });
 				g_option[id].top[ic]+=$(this)[0].offsetHeight+gap;
 			});
-            //set the waterfall box height
+			//set the waterfall box height
             t.css("height",g_option[id].top[getPolesCol(id,true)] + "px");
 			if(scrollbottom)
 				if(scrollbottom.endele)
-					scrollbottom.endele.css('top', g_option[id].top[getPolesCol(id,true)]+"px");
+					scrollbottom.endele
+						.addClass('endele')
+						.text(scrollbottom.endtxt)
+						.css('top', g_option[id].top[getPolesCol(id,true)]+"px");
 	}
 
 	// detect screen width change , resort cards
@@ -172,7 +175,8 @@
 
 	// return is scroll to bottom  
 	function isbottom(ele,gap){
-		return ((ele.innerHeight()+ele.scrollTop())>(ele.prop("scrollHeight")-gap));
+		var wh = $(window).height();
+		return ((wh+ele.scrollTop())>(ele.prop("scrollHeight")-gap));
 	}
 
 

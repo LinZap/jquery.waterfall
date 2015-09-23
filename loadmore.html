@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Waterfall-Light Demo</title>
+	<style type="text/css">
+		*{
+			margin: 0; 
+			padding:0;
+		}
+		body{
+			padding:20px;
+		}
+		.endele{
+			padding: 100px 0;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="box"></div>
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="waterfall-light.js"></script>
+	<script>
+
+		$(function(){
+
+			var page = 5;
+
+			// as below
+			var setting = {
+				gap: 10,
+			    gridWidth: [0,400,600,800,1200],
+			    scrollbottom:{
+			    	gap: 300,
+			        endtxt : 'No More Data !!',
+			        callback: function(container){
+			            // if scroll to bottom, load more data...
+			           ajax_get_more_data(container);
+
+			           if(page>=0) container.waterfall('sort');
+			           else container.waterfall('end');
+
+			        }
+			    }
+			};
+
+			
+
+			ajax_get_more_data($('#box'));
+			$('#box').waterfall(setting);
+
+			
+			// such as $.ajax()
+			function ajax_get_more_data(container){
+				if(page>0){
+					for (var i = 0; i< 30; i++) {
+						var card = $('<div>').addClass('card').css({
+							height: Math.floor((Math.random() * 100) + 200)+"px",
+							background: '#ace'
+						});
+						container.append(card);
+					}
+				}
+				page--;
+			}
+
+
+
+		});
+	</script>
+</body>
+</html>
