@@ -43,8 +43,7 @@ $(function(){
 * [Scroll down load more content](https://github.com/LinZap/jquery.waterfall/blob/master/loadmore.html)
 
 ## Installation
-
-因為 Waterfall 是一個 [jQuery](https://jquery.com/) 的 plug-in，
+jQuery.waterfall 是一個 [jQuery](https://jquery.com/) 的 plug-in，
 首先您需要先載入 [jQuery](https://jquery.com/) library
 接著載入 Waterfall library
 
@@ -61,9 +60,8 @@ $(function(){
 ### Bower
 ```sh
 bower install jquery.waterfall
-})
-```　
-　
+```
+
 
 ## Advanced usage
 
