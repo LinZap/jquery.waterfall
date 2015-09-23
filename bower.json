@@ -3,6 +3,7 @@
   "version": "1.0",
   "homepage": "https://github.com/LinZap/jquery.waterfall",
   "authors": [
+    "LinZap",
     "Zap <soldierzx0705@gmail.com>"
   ],
   "description": "LightWaterfall, cross-browser typesetting on the web with jQuery",
@@ -10,6 +11,10 @@
   "keywords": [
     "waterfall"
   ],
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/LinZap/jquery.waterfall.git"
+  },
   "license": "Apache",
   "ignore": [
     "**/.*",
