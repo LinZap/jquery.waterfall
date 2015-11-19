@@ -4,9 +4,7 @@
 
 
 
-Waterfall is a [jQuery](https://jquery.com/) plug-in which is Simple and Light.
-
-You can use it Easily and Fluently!
+Waterfall is a simple and light [jQuery](https://jquery.com/) plug-in, you can use it easily and fluently! Enjoy!!!
 
 
 ![Alt text](https://raw.githubusercontent.com/LinZap/LinZap.github.io/master/img/waterfall.png "Waterfall")
@@ -14,7 +12,7 @@ You can use it Easily and Fluently!
 
 ## Examples
 
-If you want to Waterfall `div` under `#box`
+If you want to WATERFALL `div` under `#box`
 ```html
 <!-- box is a container -->
 <div id="box">
@@ -26,7 +24,7 @@ If you want to Waterfall `div` under `#box`
 </div>
 ```
 
-What you have to do is deciding the target element
+Pick the target element
 ```js
 // waterfall have effect on #box
 $(function(){
@@ -44,7 +42,7 @@ All `div` in `#box` will be showed in Waterfall as above.
 * [Scroll down load more content](https://github.com/LinZap/jquery.waterfall/blob/master/loadmore.html)
 
 ## Installation
-First of all, you need to load [jQuery](https://jquery.com/) library, then Waterfall library.
+Well, you just need to load [jQuery](https://jquery.com/) library and then Waterfall library.
 
 
 ### Basic
@@ -65,7 +63,7 @@ bower install jquery.waterfall
 
 ## Advanced usage
 
-Here are some methods below, if you want better control !
+Here are some methods below, if you need better control !
 
 ### Setting
 ```js
@@ -86,9 +84,9 @@ $(function(){
 	$('box').waterfall(setting);
 })
 ```
-　And more selectable options :smile:
+　And more options if you like :smile:
 
-* `gap`(int): distance(px) between neighboring objects.  
+* `gap`(int): distance between neighboring objects.(px)  
 * `gridWidth`(array): Grid system, column number is determined by device width, for example
 
 ##### 5-column 
@@ -118,12 +116,12 @@ $(function(){
 |>0	|1|
 
 
-* `refresh`(int): period of screen stat detection in millisecond
-* `scrollbottom`(object): define task when scrolled to bottom
+* `refresh`(int): period of screen detection in millisecond
+* `scrollbottom`(object): some action setting as reached the end of scrollbar
 	* `ele`(element): owner of scrollbar, which is the parent element of `$('box')` by default.
-	* `endtxt`(string): message for the end of scrollbar
-	* `gap`(int): if the distance to the bottom is smaller than `gap`, then execute callback function.
-	* `callback`(funciton): user-defined action for reaching scollbar bottom
+	* `endtxt`(string): reminding message as reached the end of scrollbar
+	* `gap`(int): if the distance to the bottom is smaller than `gap`, then will execute callback function.
+	* `callback`(funciton): user-defined action as reached the end of scrollbar
 
 　
 　
@@ -145,7 +143,7 @@ Waterfall will distinguish the target by the container of `$('box')`. Therefore,
 　
 　
 ### Auto load more data on page scroll
-As `scrollbottom` is used, it's very likely that you would add some new elements to `$('box')`. Then, `sort` allows you to rearrange every elements in container. And, container itself(`$('box')`) will be reansfered to `callback` for you to manipulate.
+As `scrollbottom` is used, it's very likely that you would load some new content to `$('box')`. Then, `sort` allows you to rearrange every elements in container. Also, container itself(`$('box')`) will be transfered to `callback` function for you to manipulate.
 ```js
 var setting = {
 	scrollbottom : {
@@ -165,7 +163,7 @@ $(function(){
 })
 ```  
   
-If there is nothing more to be added to the container, then it means reaching the bottom of scrollbar. At this moment, you should remind user there is "no more data", and you can create your own remind message by setting `endtxt`.
+If there is nothing more to be loaded in the container, then it means reaching the bottom of scrollbar. At this moment, you should remind user that there is "no more data", and you can create your own reminding message by setting `endtxt`.
 ```js
 var setting = {
 	scrollbottom : {
