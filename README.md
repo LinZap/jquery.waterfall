@@ -225,6 +225,7 @@ You can find it in the root directory of this source tree.
  
 ## More...
  If any suggestion, you are welcome to create [issue](https://github.com/LinZap/jquery.waterfall/issues/new).
+ 
  I am glad to have more contributer and make this Plug-in better(Pull-requests).
 
 
