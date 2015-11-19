@@ -4,16 +4,17 @@
 
 
 
-Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
+Waterfall-Light is a [jQuery](https://jquery.com/) plug-in which is simple and light typesetting.
 
-簡單、輕量的瀑布式排版，您可以簡單、快速的使用它。
+You can use it easily and fluently!
+
 
 ![Alt text](https://raw.githubusercontent.com/LinZap/LinZap.github.io/master/img/waterfall.png "Waterfall")
 
 
 ## Examples
 
-假設您欲將 id 為 `box` 元素內的 `div` 以 Waterfall 型式排列
+If you want to Waterfall `div` under `div id=box`
 ```html
 <!-- box is a container -->
 <div id="box">
@@ -25,7 +26,7 @@ Waterfall-Light 是一個 [jQuery](https://jquery.com/) 的 plug-in
 </div>
 ```
 
-您只需指定欲使用 Waterfall 排列的元素，便可達到排列的效果。
+What you have to do is determining the target element
 ```js
 // waterfall have effect on #box
 $(function(){
@@ -33,7 +34,7 @@ $(function(){
 })
 ```
 
-如上所示，所有`box` 內的 `div` 元素會以 Waterfall 的形式排列。
+All `div` in `div id=box` will be showed in Waterfall as above.
 
 
 ### More Examples
@@ -43,9 +44,8 @@ $(function(){
 * [Scroll down load more content](https://github.com/LinZap/jquery.waterfall/blob/master/loadmore.html)
 
 ## Installation
-jQuery.waterfall 是一個 [jQuery](https://jquery.com/) 的 plug-in，
-首先您需要先載入 [jQuery](https://jquery.com/) library
-接著載入 Waterfall library
+First of all, you need to load [jQuery](https://jquery.com/) library. then Waterfall library.
+
 
 ### Basic
 ```html
@@ -55,7 +55,7 @@ jQuery.waterfall 是一個 [jQuery](https://jquery.com/) 的 plug-in，
 <!-- The core Waterfall library -->
 <script src="//linzap.github.io/waterfall/waterfall-light.js"></script>
 ```
-或是下載 Waterfall [starter kit](https://github.com/LinZap/jquery.waterfall/releases/tag/v1.2) 來引入這個 library，載入速度也會相較的快。
+or download Waterfall [starter kit](https://github.com/LinZap/jquery.waterfall/releases/tag/v1.2) to load the library whicj  make loading speed faster.
 
 ### Bower
 ```sh
@@ -65,7 +65,7 @@ bower install jquery.waterfall
 
 ## Advanced usage
 
-如果您需要控制更多參數、細節，Waterfall 擁有幾個 methods 如下所示。
+Here are some methods below, if you want better control!
 
 ### Setting
 ```js
@@ -86,15 +86,31 @@ $(function(){
 	$('box').waterfall(setting);
 })
 ```
-　您可以傳入一個`物件`，其中的選項"全部"皆可選填，一覽如下：
+　And more selectable options :smile:
 
-* `gap`(int): 排列物體彼此的間距(margin)，單位為像素 px
-* `gridWidth`(array): 宣告螢幕寬度所對應的欄位數量，上述設定表示螢幕寬度 (px)
-	*  `0~400` 呈現 1 欄
-	*  `400~600` 呈現 2 欄
-	*  `600~800` 呈現 3 欄
-	*  `800~1200` 呈現 4 欄
-	*  `>1200` 呈現 5 欄
+* `gap`(int): distance(px) between neighboring objects.  
+* `gridWidth`(array): Grid system, column number is determined by device width, for example
+
+##### 5-column 
+*  `gridWidth: [0,400,600,800,1200]`
+	*  `device_width` `column number`
+	*  `0~400` 	  1
+	*  `400~600` 	  2
+	*  `600~800` 	  3
+	*  `800~1200` 	  4
+	*  `>1200` 	  5
+
+##### 2-column 
+*  `gridWidth: [0,400]`
+	*  `device_width` `column number`
+	*  `0~400` 	  1
+	*  `>400` 	  2
+
+##### 1-column 
+*  `gridWidth: [0]`
+	*  `device_width` `column number`
+	*  `>0` 	  1
+
 * `refresh`(int): 偵測螢幕變化的時間間隔，單位為毫秒 (ms)
 * `scrollbottom`(object): 設定開啟偵測卷軸滾動到底部，要做的事情
 	* `ele`(element): 產生卷軸的元素，預設為 `$('box')` 的父元素
