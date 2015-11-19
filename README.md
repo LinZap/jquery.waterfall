@@ -92,24 +92,31 @@ $(function(){
 * `gridWidth`(array): Grid system, column number is determined by device width, for example
 
 ##### 5-column 
-*  `gridWidth: [0,400,600,800,1200]`
-	*  `device_width` `column number`
-	*  `0~400` 	  1
-	*  `400~600` 	  2
-	*  `600~800` 	  3
-	*  `800~1200` 	  4
-	*  `>1200` 	  5
+*  `gridWidth: [0,400,600,800,1200]`  
+
+| device_width        | column number|
+| ------------- |:-------------:|
+|0~400	|1|
+|400~600|2|
+|600~800|3|
+|800~1200|4|
+|>1200|5|
 
 ##### 2-column 
 *  `gridWidth: [0,400]`
-	*  `device_width` `column number`
-	*  `0~400` 	  1
-	*  `>400` 	  2
+
+| device_width        | column number|
+| ------------- |:-------------:|
+|0~400	|1|
+|>400|2|
 
 ##### 1-column 
 *  `gridWidth: [0]`
-	*  `device_width` `column number`
-	*  `>0` 	  1
+
+| device_width        | column number|
+| ------------- |:-------------:|
+|>0	|1|
+
 
 * `refresh`(int): 偵測螢幕變化的時間間隔，單位為毫秒 (ms)
 * `scrollbottom`(object): 設定開啟偵測卷軸滾動到底部，要做的事情
