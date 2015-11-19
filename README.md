@@ -42,7 +42,7 @@ All `div` in `#box` will be showed in Waterfall as above.
 * [Scroll down load more content](https://github.com/LinZap/jquery.waterfall/blob/master/loadmore.html)
 
 ## Installation
-Well, you just need to load [jQuery](https://jquery.com/) library and then Waterfall library.
+Just load [jQuery](https://jquery.com/) library and then Waterfall library.
 
 
 ### Basic
