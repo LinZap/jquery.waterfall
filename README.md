@@ -86,7 +86,7 @@ $(function(){
 ```
 　And more options if you like :smile:
 
-* `gap`(int): distance between neighboring objects.(px)  
+* `gap`(int): distance between neighboring objects in pixels.  
 * `gridWidth`(array): Grid system, column number is determined by device width, for example
 
 ##### 5-column 
