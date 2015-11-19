@@ -118,17 +118,17 @@ $(function(){
 |>0	|1|
 
 
-* `refresh`(int): 偵測螢幕變化的時間間隔，單位為毫秒 (ms)
-* `scrollbottom`(object): 設定開啟偵測卷軸滾動到底部，要做的事情
-	* `ele`(element): 產生卷軸的元素，預設為 `$('box')` 的父元素
-	* `endtxt`(string): 捲動到底部後，顯示的文字
-	* `gap`(int): 若距離底部小於這個 `gap` 值，則會觸發 callback 執行
-	* `callback`(funciton): 回呼函式，您可以定義卷軸到底部時，會執行的其它功能
+* `refresh`(int): period of screen stat detection in millisecond
+* `scrollbottom`(object): define task when scrolled to bottom
+	* `ele`(element): owner of scrollbar, which is the parent element of `$('box')` by default.
+	* `endtxt`(string): message for the end of scrollbar
+	* `gap`(int): if the distance to the bottom is smaller than `gap`, then execute callback function.
+	* `callback`(funciton): user-defined action for reaching scollbar bottom
 
 　
 　
 ### Stop,Restart Waterfall effect
-Waterfall 是一個會不斷偵測螢幕變化的函式，若您需要暫時停止它的偵測功能，可以這樣呼叫
+Waterfall will continuingly detect your screen action. Therefore, if you want to stop its detection, method is showed as below.  
 ```js
 $(function(){
 	// Launch waterfall 
@@ -141,12 +141,11 @@ $(function(){
 	$('box').waterfall();	
 })
 ```
-Waterfall 會以您 `$('box')` 容器做為識別的依據，若 wab 上同時存在 2 個以上的 Waterfall 容器，stop 也只會作用在您指定的容器上
-
+Waterfall will distinguish the target by the container of `$('box')`. Therefore, stop action will only be activated to your specific container when there are two or more Waterfall container on Web.
 　
 　
 ### Auto load more data on page scroll
-若您有設定 `scrollbottom` 的話，表示您可能會加入新的元素到 `$('box')` 容器中，此時您可在 `callback` 中呼叫 `sort` 重新排列容器中的元素。在這個`callback`中，會傳入容器自身(`$('box')`)方便您操控。
+As `scrollbottom` is used, it's very likely that you would add some new elements to `$('box')`. Then, `sort` allows you to rearrange every elements in container. And, container itself(`$('box')`) will be reansfered to `callback` for you to manipulate.
 ```js
 var setting = {
 	scrollbottom : {
@@ -166,8 +165,7 @@ $(function(){
 })
 ```  
   
-  
-若您已經沒有更多元素須被加入，此時表示已經捲動到最底部且需要提示使用者"沒有更多資料"，您可以設定`endtxt`來客製化這個提示文字
+If there is nothing more to be added to the container, then it means reaching the bottom of scrollbar. At this moment, you should remind user there is "no more data", and you can create your own remind message by setting `endtxt`.
 ```js
 var setting = {
 	scrollbottom : {
@@ -190,15 +188,15 @@ $(function(){
 	$('box').waterfall(setting);
 })
 ```  
-:exclamation: 注意，如果您呼叫了`$('box').waterfall("stop")`，那麼 `scrollbottom` 不會被觸發，而且 `$('box').waterfall("sort")` 也會失效。
+:exclamation: Notice that if you execute `$('box').waterfall("stop")`, then `scrollbottom` and `$('box').waterfall("sort")` will be disabled.
  
 
-另外，呼叫了 `container.waterfall('end')` 並不會停止偵測，若需停止偵測，仍需呼叫 `$('box').waterfall("stop")` 才行。
+Besides, `container.waterfall('end')` will not stop the detection but executing `$('box').waterfall("stop")` is the only way.
 
 　
 　
 ### Overwrite setting
-如果您需要更新 Waterfall 的 setting，您可以直接傳入設定物件。Waterfall 不會覆蓋掉已經設定的參數
+Waterfall setting accepts overwriten by importing the setting object. And nothing but the specific target will be updated by  the transfered setting data.
 ```js
 var setting = {
 	gap: 10,
