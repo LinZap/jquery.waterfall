@@ -4,9 +4,9 @@
 
 
 
-Waterfall-Light is a [jQuery](https://jquery.com/) plug-in which is simple and light typesetting.
+Waterfall is a [jQuery](https://jquery.com/) plug-in which is Simple and Light.
 
-You can use it easily and fluently!
+You can use it Easily and Fluently!
 
 
 ![Alt text](https://raw.githubusercontent.com/LinZap/LinZap.github.io/master/img/waterfall.png "Waterfall")
@@ -14,7 +14,7 @@ You can use it easily and fluently!
 
 ## Examples
 
-If you want to Waterfall `div` under `div id=box`
+If you want to Waterfall `div` under `#box`
 ```html
 <!-- box is a container -->
 <div id="box">
@@ -26,7 +26,7 @@ If you want to Waterfall `div` under `div id=box`
 </div>
 ```
 
-What you have to do is determining the target element
+What you have to do is deciding the target element
 ```js
 // waterfall have effect on #box
 $(function(){
@@ -34,7 +34,7 @@ $(function(){
 })
 ```
 
-All `div` in `div id=box` will be showed in Waterfall as above.
+All `div` in `#box` will be showed in Waterfall as above.
 
 
 ### More Examples
@@ -224,8 +224,8 @@ You can find it in the root directory of this source tree.
 
  
 ## More...
- 如果有 Waterfall 的建議可以發出 [issue](https://github.com/LinZap/jquery.waterfall/issues/new) 讓我知道 
- 也歡迎您成為 Waterfall 的 contributer，讓這個 Plug-in 更加完善 (Pull-requests)
+ If any suggestion, you are welcome to create [issue](https://github.com/LinZap/jquery.waterfall/issues/new).
+ I am glad to have more contributer and make this Plug-in better(Pull-requests).
 
 
  
