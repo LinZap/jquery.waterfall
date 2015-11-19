@@ -55,7 +55,7 @@ First of all, you need to load [jQuery](https://jquery.com/) library, then Water
 <!-- The core Waterfall library -->
 <script src="//linzap.github.io/waterfall/waterfall-light.js"></script>
 ```
-or download Waterfall [starter kit](https://github.com/LinZap/jquery.waterfall/releases/tag/v1.2) to load the library whicj  make loading speed faster.
+or download Waterfall [starter kit](https://github.com/LinZap/jquery.waterfall/releases/tag/v1.2) to load the library which  make loading speed faster.
 
 ### Bower
 ```sh
@@ -65,7 +65,7 @@ bower install jquery.waterfall
 
 ## Advanced usage
 
-Here are some methods below, if you want better control!
+Here are some methods below, if you want better control !
 
 ### Setting
 ```js
