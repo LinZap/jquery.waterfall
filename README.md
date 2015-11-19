@@ -143,7 +143,7 @@ Waterfall will distinguish the target by the container of `$('box')`. Therefore,
 　
 　
 ### Auto load more data on page scroll
-As `scrollbottom` is used, it's very likely that you would load some new content to `$('box')`. Then, `sort` allows you to rearrange every elements in container. Also, container itself(`$('box')`) will be transfered to `callback` function for you to manipulate.
+As `scrollbottom` is used, it's very likely that you would load some new content to `$('box')`. Then, `sort` allows you to rearrange every elements in container. Also, `$('box')`(container itself) will be transfered to `callback` function for you to manipulate.
 ```js
 var setting = {
 	scrollbottom : {
@@ -163,7 +163,7 @@ $(function(){
 })
 ```  
   
-If there is nothing more to be loaded in the container, then it means reaching the bottom of scrollbar. At this moment, you should remind user that there is "no more data", and you can create your own reminding message by setting `endtxt`.
+If there is nothing more to be loaded in the container, then it means reaching the end of scrollbar. At this moment, you should remind user that there is "no more data", and you can create your own reminding message by setting `endtxt`.
 ```js
 var setting = {
 	scrollbottom : {
@@ -220,9 +220,8 @@ You can find it in the root directory of this source tree.
 
  
 ## More...
- If any suggestion, you are welcome to create [issue](https://github.com/LinZap/jquery.waterfall/issues/new).
- 
- I am glad to have more contributer and make this Plug-in better(Pull-requests).
+ If any suggestion, use [issue](https://github.com/LinZap/jquery.waterfall/issues/new)! I will be glad to discuss with you.   
+ Also, I welcome more contributers and hope to make this Plug-in even better(Pull-requests).
 
 
  
