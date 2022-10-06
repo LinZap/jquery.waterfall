@@ -176,7 +176,8 @@
 	// return is scroll to bottom  
 	function isbottom(ele,gap){
 		var wh = $(window).height();
-		return ((wh+ele.scrollTop())>(ele.prop("scrollHeight")-gap));
+		var es = (ele.get(0) == $('body').get(0))?Math.max(ele.scrollTop(), window.pageYOffset):ele.scrollTop();
+		return (wh+es>(ele.prop("scrollHeight")-gap));
 	}
 
 
